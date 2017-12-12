@@ -1,0 +1,11 @@
+[user]
+  name =
+  email =
+
+[core]
+  editor = vim
+
+[alias]
+  lol = log --color --graph --pretty=format:'%C(cyan)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  st = status
+  br = branch
