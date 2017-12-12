@@ -5,6 +5,7 @@ parse_git_branch() {
 export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 # Autocomplete git branch names
+# Need to also download git-completion.bash script from git/completion repo
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
