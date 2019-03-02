@@ -14,3 +14,9 @@ fi
 
 # z utility (https://github.com/rupa/z). update based on path to z.sh
 . ~/z/z.sh
+
+# fzf fuzzy finder utility (https://github.com/junegunn/fzf)
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# direnv environment switcher (https://direnv.net/)
+eval "$(direnv hook bash)"
