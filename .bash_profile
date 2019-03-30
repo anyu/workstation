@@ -1,4 +1,5 @@
 alias g='git'
+alias myip='ipconfig getifaddr en0'
 
 # Display git branch in prompt
 parse_git_branch() {
