@@ -1,25 +1,34 @@
-tap 'neovim/neovim'
-
-brew 'fzf'
-brew 'fasd'
+# Core
 brew 'git'
-brew 'go'
-brew 'jq'
-brew 'ruby-install'
-brew 'ruby'
-brew 'chruby'
-brew 'shellcheck'
-brew 'the_silver_searcher'
 brew 'tree'
 brew 'watch'
 brew 'wget'
-brew 'direnv'
 brew 'tldr'
-brew 'lastpass-cli'
+brew 'jq'
+brew 'fx'
 
+# Navigation
+brew 'the_silver_searcher'
+brew 'direnv'
+brew 'fzf'
+brew 'fasd'
+brew 'z'
+brew 'bash-completion'
+brew 'bat'
+brew 'exa'
+
+# Language specific
+brew 'neovim'
+brew 'shellcheck'
+brew 'go'
+brew 'ruby-install'
+brew 'ruby'
+brew 'chruby'
 brew 'npm'
 brew 'yarn'
-brew 'bash-completion'
+
+# Other
+brew 'lastpass-cli'
 
 cask 'flycut'
 cask 'spectacle'
