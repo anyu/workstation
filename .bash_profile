@@ -3,6 +3,8 @@ alias gpr='git pull --rebase'
 alias myip='ipconfig getifaddr en0'
 alias vim='nvim'
 alias vbp='vim ~/.bash_profile'
+alias cat='bat'
+alias ls='exa'
 
 # Display git branch in prompt
 parse_git_branch() {
