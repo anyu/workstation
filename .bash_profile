@@ -6,6 +6,8 @@ alias vbp='vim ~/.bash_profile'
 alias cat='bat'
 alias ls='exa'
 
+[ -f ~/.bashrc ] && source ~/.bashrc
+
 # Display git branch in prompt
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
