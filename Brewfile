@@ -26,6 +26,7 @@ brew 'ruby'
 brew 'chruby'
 brew 'npm'
 brew 'yarn'
+brew 'docker'
 
 # Other
 brew 'lastpass-cli'
