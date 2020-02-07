@@ -5,6 +5,7 @@ alias vim='nvim'
 alias vbp='vim ~/.bash_profile'
 alias cat='bat'
 alias ls='exa'
+alias a="atom $1"
 
 [ -f ~/.bashrc ] && source ~/.bashrc
 
