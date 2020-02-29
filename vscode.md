@@ -1,3 +1,5 @@
+// $HOME/Library/Application\ Support/Code/User/settings.json
+
 ## User Settings
 ```markdown
 {
@@ -11,7 +13,7 @@
     "workbench.statusBar.visible": true,
     "editor.minimap.enabled": false,
     "workbench.sideBar.location": "left",
-    "workbench.colorTheme": "Base16 Ocean Deep",
+    "workbench.colorTheme": "Oceanic Next (dimmed bg)",
     "vsicons.dontShowNewVersionMessage": true,
     "extensions.ignoreRecommendations": true,
     "vim.disableAnnoyingNeovimMessage": true,
