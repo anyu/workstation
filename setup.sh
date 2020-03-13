@@ -25,6 +25,11 @@ function brewfile() {
     brew bundle --file="$PWD/Brewfile"
 }
 
+function install_nvm() {
+    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+    nvm install --lts
+}
+
 function git-config() {
     git config --global url."git@github.com:".insteadOf https://github.com/
     git config --global user.name "An Yu"
@@ -71,6 +76,7 @@ function main() {
     make-workspace
     homebrew
     brewfile
+    install_nvm
     git-config
     setup-fzf
     setup-z-dir-jumper

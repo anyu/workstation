@@ -24,7 +24,6 @@ brew 'go'
 brew 'ruby-install'
 brew 'ruby'
 brew 'chruby'
-brew 'npm'
 brew 'yarn'
 brew 'docker'
 
