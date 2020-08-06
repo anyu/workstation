@@ -16,6 +16,7 @@ alias omz="code ~/.oh-my-zsh"
 alias zshrc="code ~/.zshrc"
 alias zshenv="code ~/.zshenv"
 alias zshcustom="code ${ZSH_CUSTOM}/zsh-custom.zsh"
+alias starshipt="code ~/.config/starship.toml"
 
 # custom shell prompt
 eval "$(starship init zsh)"
