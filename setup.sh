@@ -25,14 +25,23 @@ function brewfile() {
     brew bundle --file="$PWD/Brewfile"
 }
 
-function install_ohmyzsh() {
+function install_setup_ohmyzsh() {
     sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+    pushd ${ZSH_CUSTOM}/plugins
+    git clone https://github.com/zsh-users/zsh-autosuggestions
+    popd
 
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM}/plugins
+    cp .zshrc ~/
+    cp .zshenv ~/
+    cp zsh-custom.zsh ${ZSH_CUSTOM}/
 }
 
 function install_fzf_bindings() {
     $(brew --prefix)/opt/fzf/install
+}
+
+function configure_starship() {
+    cp starship.toml ~/.config/
 }
 
 function install_nvm() {
@@ -75,7 +84,8 @@ function main() {
     make-workspace
     homebrew
     brewfile
-    install_ohmyzsh
+    install_setup_ohmyzsh
+    configure_starship
     install_fzf_bindings
     install_nvm
     install_1pass
