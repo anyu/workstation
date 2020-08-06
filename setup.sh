@@ -59,7 +59,9 @@ function git-config() {
     git config --global user.email "ayu3500@gmail.com"
 
     git config --global alias.ci commit
+    git config --global alias.ciam "commit --amend"
     git config --global alias.co checkout
+    git config --global alias.pom "push origin master"
     git config --global alias.st status
     git config --global alias.di diff
     git config --global alias.br branch
