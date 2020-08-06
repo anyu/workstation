@@ -1,6 +1,7 @@
 # Core
 brew 'fx'
 brew 'git'
+brew 'httpie'
 brew 'jq'
 brew 'tldr'
 brew 'tree'
@@ -9,10 +10,13 @@ brew 'wget'
 
 # Navigation
 brew 'bat'
+brew 'diff-so'fancy'
 brew 'direnv'
 brew 'exa'
 brew 'fasd'
+brew 'fd'
 brew 'fzf'
+brew 'ripgrep'
 brew 'neovim'
 brew 'starship'
 brew 'the_silver_searcher'
@@ -21,12 +25,11 @@ brew 'the_silver_searcher'
 brew 'chruby'
 brew 'docker'
 brew 'go'
+brew 'lazydocker'
 brew 'ruby'
 brew 'shellcheck'
 
-# Other
-brew 'diff-so'fancy'
-
+# Casks
 cask '1password'
 cask 'atom'
 cask 'firefox'
