@@ -1,41 +1,40 @@
 # Core
+brew 'fx'
 brew 'git'
+brew 'jq'
+brew 'tldr'
 brew 'tree'
 brew 'watch'
 brew 'wget'
-brew 'tldr'
-brew 'jq'
-brew 'fx'
 
 # Navigation
-brew 'the_silver_searcher'
-brew 'direnv'
-brew 'fzf'
-brew 'fasd'
-brew 'z'
-brew 'bash-completion'
 brew 'bat'
+brew 'direnv'
 brew 'exa'
-
-# Language specific
+brew 'fasd'
+brew 'fzf'
 brew 'neovim'
-brew 'shellcheck'
-brew 'go'
-brew 'ruby-install'
-brew 'ruby'
+brew 'starship'
+brew 'the_silver_searcher'
+
+# Tool specific
 brew 'chruby'
-brew 'yarn'
 brew 'docker'
+brew 'go'
+brew 'ruby'
+brew 'shellcheck'
 
 # Other
 brew 'lastpass-cli'
+brew 'diff-so'fancy'
 
+cask 'atom'
+cask 'firefox'
 cask 'flycut'
-cask 'spectacle'
 cask 'google-chrome'
 cask 'google-cloud-sdk'
 cask 'iterm2'
 cask 'slack'
+cask 'spectacle'
 cask 'spotify'
 cask 'visual-studio-code'
-cask 'atom'

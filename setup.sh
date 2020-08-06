@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 set -ex
 
@@ -18,16 +18,24 @@ function homebrew() {
       return 0
     fi
 
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 }
 
 function brewfile() {
     brew bundle --file="$PWD/Brewfile"
 }
 
+function install_ohmyzsh() {
+    sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+}
+
 function install_nvm() {
-    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+    sh -c "$(wget https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh -O -)"
     nvm install --lts
+}
+
+function install_fzf_bindings() {
+    $(brew --prefix)/opt/fzf/install
 }
 
 function git-config() {
@@ -43,7 +51,6 @@ function git-config() {
     git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local"
     git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 
-    npm install -g diff-so-fancy
     # diff-so-fancy colors
     git config --global color.diff-highlight.oldNormal    "red bold"
     git config --global color.diff-highlight.oldHighlight "red bold 52"
@@ -58,29 +65,14 @@ function git-config() {
     git config --global color.diff.whitespace "red reverse"
 }
 
-function setup-z-dir-jumper() {
-    wget https://raw.githubusercontent.com/rupa/z/master/z.sh -O ~/z.sh
-    chmod +x ~/z.sh
-}
-
-function setup-fzf() {
-    ln -fs "$PWD/.fzf.bash" "$HOME/"
-}
-
-function bash-profile() {
-    ln -fs "$PWD/.bash_profile" "$HOME/"
-    source "$HOME/.bash_profile"
-}
-
 function main() {
     make-workspace
     homebrew
     brewfile
+    install_ohmyzsh
+    install_fzf_bindings
     install_nvm
     git-config
-    setup-fzf
-    setup-z-dir-jumper
-    bash-profile
 }
 
 main
