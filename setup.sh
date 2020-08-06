@@ -27,6 +27,12 @@ function brewfile() {
 
 function install_ohmyzsh() {
     sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM}/plugins
+}
+
+function install_fzf_bindings() {
+    $(brew --prefix)/opt/fzf/install
 }
 
 function install_nvm() {
@@ -34,8 +40,8 @@ function install_nvm() {
     nvm install --lts
 }
 
-function install_fzf_bindings() {
-    $(brew --prefix)/opt/fzf/install
+function install_1pass() {
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null ; brew install caskroom/cask/brew-cask 2> /dev/null
 }
 
 function git-config() {
@@ -72,6 +78,7 @@ function main() {
     install_ohmyzsh
     install_fzf_bindings
     install_nvm
+    install_1pass
     git-config
 }
 

@@ -5,6 +5,7 @@ ZSH_THEME=""
 plugins=(
   fzf
   z
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh

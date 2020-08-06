@@ -25,15 +25,16 @@ brew 'ruby'
 brew 'shellcheck'
 
 # Other
-brew 'lastpass-cli'
 brew 'diff-so'fancy'
 
+cask '1password'
 cask 'atom'
 cask 'firefox'
 cask 'flycut'
 cask 'google-chrome'
 cask 'google-cloud-sdk'
 cask 'iterm2'
+cask 'meetingbar'
 cask 'slack'
 cask 'spectacle'
 cask 'spotify'
