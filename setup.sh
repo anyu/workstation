@@ -31,9 +31,9 @@ function install_setup_ohmyzsh() {
     git clone https://github.com/zsh-users/zsh-autosuggestions
     popd
 
-    cp .zshrc ~/
-    cp .zshenv ~/
-    cp zsh-custom.zsh ${ZSH_CUSTOM}/
+    cp zsh/.zshrc ~/
+    cp zsh/.zshenv ~/
+    cp zsh/zsh-custom.zsh ${ZSH_CUSTOM}/
 }
 
 function install_fzf_bindings() {

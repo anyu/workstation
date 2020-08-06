@@ -1,22 +1,18 @@
-// $HOME/Library/Application\ Support/Code/User/settings.json
+## $HOME/Library/Application\ Support/Code/User/settings.json
 
 ## User Settings
 ```markdown
 {
-    "workbench.activityBar.visible": true,
-    "workbench.welcome.enabled": false,
-    "workbench.editor.enablePreview": false,
-    "editor.snippetSuggestions": "top",
-    "workbench.iconTheme": "vscode-icons",
-    "editor.tabSize": 2,
     "window.zoomLevel": 0,
-    "workbench.statusBar.visible": true,
+    "editor.snippetSuggestions": "top",
+    "editor.tabSize": 2,
     "editor.minimap.enabled": false,
+    "workbench.statusBar.visible": true,
     "workbench.sideBar.location": "left",
-    "vsicons.dontShowNewVersionMessage": true,
     "extensions.ignoreRecommendations": true,
-    "vim.disableAnnoyingNeovimMessage": true,
-    "vim.enableNeovim": true,
+    "workbench.activityBar.visible": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "Nord",
     "workbench.colorCustomizations": {
         "editor.background": "#151a25",
