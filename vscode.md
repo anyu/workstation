@@ -13,11 +13,18 @@
     "workbench.statusBar.visible": true,
     "editor.minimap.enabled": false,
     "workbench.sideBar.location": "left",
-    "workbench.colorTheme": "Oceanic Next (dimmed bg)",
     "vsicons.dontShowNewVersionMessage": true,
     "extensions.ignoreRecommendations": true,
     "vim.disableAnnoyingNeovimMessage": true,
-    "vim.enableNeovim": true
+    "vim.enableNeovim": true,
+    "workbench.colorTheme": "Nord",
+    "workbench.colorCustomizations": {
+        "editor.background": "#151a25",
+        "sideBar.background":"#151a25",
+        "sideBarSectionHeader.background":"#151a25",
+        "activityBar.background": "#282d38",
+        "editorGutter.background": "#151a25"
+    }
 }
 ```
 ## Extensions
