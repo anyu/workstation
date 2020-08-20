@@ -5,13 +5,18 @@
 
 # Place in ${ZSH_CUSTOM} directory
 
+alias cat='bat'
+alias d='docker'
+alias dup='docker-compose up'
+alias ddown='docker-compose down'
 alias g='git'
 alias gpr='git pull --rebase'
+alias gap='git add -p'
+alias k="kubectl"
 alias myip='ipconfig getifaddr en0'
-alias vim='nvim'
-alias cat='bat'
-alias ls='exa'
 alias omz="code ~/.oh-my-zsh"
+alias ls='exa'
+alias vim='nvim"
 
 alias zshrc="code ~/.zshrc"
 alias zshenv="code ~/.zshenv"
