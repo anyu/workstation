@@ -31,6 +31,7 @@ brew 'shellcheck'
 
 # Casks
 cask '1password'
+cask 'alfred'
 cask 'atom'
 cask 'firefox'
 cask 'flycut'

@@ -56,7 +56,7 @@ function install_1pass() {
 function git-config() {
     git config --global url."git@github.com:".insteadOf https://github.com/
     git config --global user.name "An Yu"
-    git config --global user.email "ayu3500@gmail.com"
+    # git config --global user.email "<email>"
 
     git config --global alias.ci commit
     git config --global alias.ciam "commit --amend"

@@ -1,4 +1,4 @@
-## $HOME/Library/Application\ Support/Code/User/settings.json
+$HOME/Library/Application\ Support/Code/User/settings.json
 
 ## User Settings
 ```markdown
