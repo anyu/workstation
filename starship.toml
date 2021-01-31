@@ -2,14 +2,14 @@
 
 add_newline = false
 
-prompt_order=[
-  "directory",
-  "git_branch",
-  "git_status",
-  "git_commit",
-  "line_break",
-  "character"
-]
+format = """\
+  $directory\
+  $git_branch\
+  $git_status\
+  $git_commit\
+  $line_break\
+  $character\
+  """
 
 [git_branch]
 symbol = ""
@@ -24,4 +24,4 @@ ssh_only = true
 disabled = true
 
 [character]
-use_symbol_for_status = true  # Indicate error status by changing the symbol
+error_symbol = true  # Indicate error status by changing the symbol

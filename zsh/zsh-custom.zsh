@@ -12,11 +12,12 @@ alias ddown='docker-compose down'
 alias g='git'
 alias gpr='git pull --rebase'
 alias gap='git add -p'
+alias i='istioctl'
 alias k="kubectl"
+alias ls='exa'
 alias myip='ipconfig getifaddr en0'
 alias omz="code ~/.oh-my-zsh"
-alias ls='exa'
-alias vim='nvim"
+alias vim='nvim'
 
 alias zshrc="code ~/.zshrc"
 alias zshenv="code ~/.zshenv"
