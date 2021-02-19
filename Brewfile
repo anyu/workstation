@@ -10,7 +10,7 @@ brew 'wget'
 
 # Navigation
 brew 'bat'
-brew 'diff-so'fancy'
+brew 'diff-so-fancy'
 brew 'direnv'
 brew 'exa'
 brew 'fasd'
