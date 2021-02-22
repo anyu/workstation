@@ -1,14 +1,16 @@
 #!/bin/sh
 
-set -ex
+set -e
 
 WORKSPACE="$HOME/workspace"
 
-function make-workspace() {
+function make_workspace() {
+    echo "Making workspace...\n"
     mkdir "$HOME/workspace" 2> /dev/null || true
 }
 
 function homebrew() {
+    echo "Installing Homebrew...\n"
     set +e
     which brew > /dev/null
     local exit_code="$?"
@@ -18,14 +20,16 @@ function homebrew() {
       return 0
     fi
 
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 }
 
 function brewfile() {
+    echo "Reading in Brewfile...\n"
     brew bundle --file="$PWD/Brewfile"
 }
 
 function install_setup_ohmyzsh() {
+    echo "Installing ohmyzsh and setting up zsh configs...\n"
     sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
     pushd ${ZSH_CUSTOM}/plugins
     git clone https://github.com/zsh-users/zsh-autosuggestions
@@ -37,23 +41,17 @@ function install_setup_ohmyzsh() {
 }
 
 function install_fzf_bindings() {
+    echo "Installing fzf bindings...\n" 
     $(brew --prefix)/opt/fzf/install
 }
 
 function configure_starship() {
+    echo "Configuring starship...\n"
     cp starship.toml ~/.config/
 }
 
-function install_nvm() {
-    sh -c "$(wget https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh -O -)"
-    nvm install --lts
-}
-
-function install_1pass() {
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null ; brew install caskroom/cask/brew-cask 2> /dev/null
-}
-
-function git-config() {
+function git_config() {
+    echo "Configuring git...\n"
     git config --global url."git@github.com:".insteadOf https://github.com/
     git config --global user.name "An Yu"
     # git config --global user.email "<email>"
@@ -83,15 +81,13 @@ function git-config() {
 }
 
 function main() {
-    make-workspace
+    make_workspace
     homebrew
     brewfile
     install_setup_ohmyzsh
     configure_starship
     install_fzf_bindings
-    install_nvm
-    install_1pass
-    git-config
+    git_config
 }
 
 main
