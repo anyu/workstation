@@ -4,7 +4,7 @@ ZSH_THEME=""
 
 plugins=(
   fzf
-  z
+  zsh-z
   zsh-autosuggestions
 )
 

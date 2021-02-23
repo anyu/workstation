@@ -16,7 +16,7 @@ brew 'diff-so-fancy'
 brew 'exa'
 brew 'fasd'
 brew 'fd'
-brew 'fzf'
+brew 'fzf' # Fuzzy finder
 brew 'mas' # Mac App Store manager
 brew 'ripgrep'
 brew 'starship'

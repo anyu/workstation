@@ -1,15 +1,25 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 set -e
 
-WORKSPACE="$HOME/workspace"
+main() {
+    make_workspace
+    homebrew
+    brewfile
+    git_config
 
-function make_workspace() {
-    echo "Making workspace...\n"
-    mkdir "$HOME/workspace" 2> /dev/null || true
+    install_configure_ohmyzsh
+    configure_starship
+    install_fzf_bindings
+    configure_vscode
 }
 
-function homebrew() {
+make_workspace() {
+    echo "Making workspace...\n"
+    mkdir "${HOME}/workspace" 2> /dev/null || true
+}
+
+homebrew() {
     echo "Installing Homebrew...\n"
     set +e
     which brew > /dev/null
@@ -17,40 +27,18 @@ function homebrew() {
     set -e
 
     if [[ "$exit_code" -eq 0 ]]; then
-      return 0
+    return 0
     fi
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 }
 
-function brewfile() {
+brewfile() {
     echo "Reading in Brewfile...\n"
-    brew bundle --file="$PWD/Brewfile"
+    brew bundle --file="${PWD}/Brewfile"
 }
 
-function install_setup_ohmyzsh() {
-    echo "Installing ohmyzsh and setting up zsh configs...\n"
-    sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-    pushd ${ZSH_CUSTOM}/plugins
-    git clone https://github.com/zsh-users/zsh-autosuggestions
-    popd
-
-    cp zsh/.zshrc ~/
-    cp zsh/.zshenv ~/
-    cp zsh/zsh-custom.zsh ${ZSH_CUSTOM}/
-}
-
-function install_fzf_bindings() {
-    echo "Installing fzf bindings...\n" 
-    $(brew --prefix)/opt/fzf/install
-}
-
-function configure_starship() {
-    echo "Configuring starship...\n"
-    cp starship.toml ~/.config/
-}
-
-function git_config() {
+git_config() {
     echo "Configuring git...\n"
     git config --global url."git@github.com:".insteadOf https://github.com/
     git config --global user.name "An Yu"
@@ -80,14 +68,52 @@ function git_config() {
     git config --global color.diff.whitespace "red reverse"
 }
 
-function main() {
-    make_workspace
-    homebrew
-    brewfile
-    install_setup_ohmyzsh
-    configure_starship
-    install_fzf_bindings
-    git_config
+install_configure_ohmyzsh() {
+    echo "Installing ohmyzsh and zsh configs...\n"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    
+    if [[ -z "${ZSH_CUSTOM}" ]]; then
+        export ZSH_CUSTOM="${HOME}/.oh-my-zsh/custom"
+    fi
+
+    pushd "${ZSH_CUSTOM}"/plugins
+        git clone https://github.com/agkozak/zsh-z
+        git clone https://github.com/zsh-users/zsh-autosuggestions
+    popd
+
+    cp zsh/.zshrc ~/
+    cp zsh/.zshenv ~/
+    cp zsh/zsh-custom.zsh "${ZSH_CUSTOM}"/
 }
 
-main
+install_fzf_bindings() {
+    echo "Installing fzf fuzzy search bindings...\n" 
+
+    # Answer yes to all interactive prompts
+    yes | $(brew --prefix)/opt/fzf/install
+
+    # Reload
+    source ~/.zshrc
+}
+
+configure_starship() {
+    echo "Configuring starship...\n"
+    cp starship.toml ~/.config/
+}
+
+configure_vscode() {
+    echo "Configuring VS Code...\n"
+    VSCODE_USER_SETTINGS="${HOME}/Library/Application Support/Code/User/"
+    cp vscode/settings.json "${VSCODE_USER_SETTINGS}"
+
+    code --install-extension golang.Go
+    code --install-extension 2gua.rainbow-brackets
+    code --install-extension christian-kohler.path-intellisense
+    code --install-extension vscode-icons-team.vscode-icons
+    code --install-extension arcticicestudio.nord-visual-studio-code
+    code --install-extension sidthesloth.html5-boilerplate
+    code --install-extension abusaidm.html-snippets
+    code --install-extension xabikos.JavaScriptSnippets
+}
+
+main "${@}"
