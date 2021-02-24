@@ -5,6 +5,8 @@
 
 # Place in ${ZSH_CUSTOM} directory
 
+alias bi='brew install'
+alias bic='brew install cask'
 alias cat='bat'
 alias d='docker'
 alias dup='docker-compose up'

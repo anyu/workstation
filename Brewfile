@@ -37,7 +37,9 @@ brew 'pre-commit'
 brew 'ruby'
 brew 'shfmt'
 brew 'shellcheck'
-brew 'vault'
+
+tap "hashicorp/tap"
+brew "hashicorp/tap/vault"
 
 # GUI apps
 cask '1password'
