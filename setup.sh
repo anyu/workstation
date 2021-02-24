@@ -12,6 +12,7 @@ main() {
     configure_starship
     install_fzf_bindings
     configure_vscode
+    install_gvm
 }
 
 make_workspace() {
@@ -99,6 +100,13 @@ install_fzf_bindings() {
 configure_starship() {
     echo "Configuring starship...\n"
     cp starship.toml ~/.config/
+}
+
+install_gvm() {
+    echo "Installing gvm...\n"
+    bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+
+    source "${HOME}/.gvm/scripts/gvm"
 }
 
 configure_vscode() {

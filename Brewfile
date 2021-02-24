@@ -1,8 +1,7 @@
-# Core development
+# Minimium development
 brew 'bash' # Latest bash version
 brew 'direnv'
 brew 'fx' # nicer JSON output
-brew 'gh'
 brew 'git'
 brew 'jq'
 brew 'tldr'
@@ -22,14 +21,23 @@ brew 'ripgrep'
 brew 'starship'
 brew 'the_silver_searcher'
 
-# Language specific
+# Dev env specific
 brew 'chruby'
 brew 'docker'
+brew 'gh'
 brew 'go'
+brew 'golangci-lint'
+brew 'grpcurl'
+brew 'istioctl'
+brew 'jetbrains-toolbox'
+brew 'jenv' # Java env manager
 brew 'lazydocker'
 brew 'neovim'
+brew 'pre-commit'
 brew 'ruby'
+brew 'shfmt'
 brew 'shellcheck'
+brew 'vault'
 
 # GUI apps
 cask '1password'
@@ -44,6 +52,7 @@ cask 'google-chrome'
 cask 'google-cloud-sdk'
 cask 'iterm2'
 cask 'meetingbar'
+cask 'monodraw'
 cask 'slack'
 cask 'spotify'
 cask 'visual-studio-code'

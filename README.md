@@ -8,7 +8,24 @@ Setup and dotfiles
 * Tweak ANSI colors
 * Preferences > Profiles > Text > Font > size 14
 
+### JetBrains
+
+Install command-line launcher for JetBrains IDE, eg. Goland.
+
+1. Add script at `/usr/local/bin/goland`; make  executable
+
+```
+#!/usr/bin/env bash
+
+open -na "<path to binary>" --args "$@" .
+```
+
+2. Alias `goland` to script path
+
+```
+alias goland=/usr/local/bin/goland
+```
+
 ### Alfred Workflows
-* [VSCode](https://www.packal.org/workflow/visual-studio-code)
-* [Go Incognito](https://www.packal.org/workflow/go-incognitoprivate-alfred-workflow)
-* [Kill Process](http://www.packal.org/workflow/kill-process)
+* [GitHub Workflow](https://github.com/gharlan/alfred-github-workflow)
+* [Encode/Decode](https://github.com/willfarrell/alfred-encode-decode-workflow)
