@@ -28,3 +28,18 @@ alias goland=/usr/local/bin/goland
 ### Alfred Workflows
 * [GitHub Workflow](https://github.com/gharlan/alfred-github-workflow)
 * [Encode/Decode](https://github.com/willfarrell/alfred-encode-decode-workflow)
+
+### Misc
+
+Update keyboard speed
+1. Keyboard > set Key Repeat to Fast; Delay Until Repeat to Short
+
+[Generate SSH key for GitHub](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+
+Replace Spotlight shortcut with Alfred
+1. Keyboard shortcuts > Spotlight > uncheck Show spotlight search
+1. Alfred > Preferences > change Alfred hotkey to cmd+space
+
+
+
