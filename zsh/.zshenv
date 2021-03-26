@@ -9,3 +9,18 @@ export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PA
 # Modify ls directory color to red (tied to iterm ansi color setting)
 LS_COLORS=$LS_COLORS:'di=1;31'
 export LS_COLORS
+
+eval "$(direnv hook zsh)"
+
+# Go
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+export GO111MODULE="on"
+
+# Vim
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Other
+export KUBE_CONFIG_PATH=~/.kube/config
