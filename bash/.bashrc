@@ -26,4 +26,9 @@ eval "$(starship init bash)"
 # direnv environment switcher (https://direnv.net/)
 eval "$(direnv hook bash)"
 
-
+shopt -s histappend # Always append
+shopt -s cmdhist # Save multi-line commands in same history entry
+HISTFILESIZE=1000000
+HISTSIZE=1000000
+HISTIGNORE='ls:history:cd:z' # Ignore uninteresting cmds
+HISTTIMEFORMAT='%F %T '

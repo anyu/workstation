@@ -3,25 +3,28 @@
 set -e
 
 main() {
-    make_workspace
+    make_workspace 
     homebrew
-    brewfile
+    brewfile || true
     git_config
 
-    install_configure_ohmyzsh
-    configure_starship
-    install_fzf_bindings
-    configure_vscode
-    install_gvm
+    install_configure_ohmyzsh || true
+    configure_starship || true
+    install_fzf_bindings || true
+    configure_vscode || true
+    install_gvm 
+
+    # Reload
+    source ~/.zshrc
 }
 
 make_workspace() {
-    echo "Making workspace...\n"
+    echo -e "Making workspace...\n"
     mkdir "${HOME}/workspace" 2> /dev/null || true
 }
 
 homebrew() {
-    echo "Installing Homebrew...\n"
+    echo -e "Installing Homebrew...\n"
     set +e
     which brew > /dev/null
     local exit_code="$?"
@@ -35,15 +38,15 @@ homebrew() {
 }
 
 brewfile() {
-    echo "Reading in Brewfile...\n"
+    echo -e "Reading in Brewfile...\n"
     brew bundle --file="${PWD}/Brewfile"
 }
 
 git_config() {
-    echo "Configuring git...\n"
+    echo -e "Configuring git...\n"
     git config --global url."git@github.com:".insteadOf https://github.com/
     git config --global user.name "An Yu"
-    # git config --global user.email "<email>"
+    # git config --global user.email <email>
 
     git config --global alias.ci commit
     git config --global alias.ciam "commit --amend"
@@ -70,8 +73,8 @@ git_config() {
 }
 
 install_configure_ohmyzsh() {
-    echo "Installing ohmyzsh and zsh configs...\n"
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    echo -e "Installing ohmyzsh and zsh configs...\n"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
     
     if [[ -z "${ZSH_CUSTOM}" ]]; then
         export ZSH_CUSTOM="${HOME}/.oh-my-zsh/custom"
@@ -88,22 +91,19 @@ install_configure_ohmyzsh() {
 }
 
 install_fzf_bindings() {
-    echo "Installing fzf fuzzy search bindings...\n" 
+    echo -e "Installing fzf fuzzy search bindings...\n" 
 
     # Answer yes to all interactive prompts
     yes | $(brew --prefix)/opt/fzf/install
-
-    # Reload
-    source ~/.zshrc
 }
 
 configure_starship() {
-    echo "Configuring starship...\n"
+    echo -e "Configuring starship...\n"
     cp starship.toml ~/.config/
 }
 
 install_gvm() {
-    echo "Installing gvm...\n"
+    echo -e "Installing gvm...\n"
     bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 
     source "${HOME}/.gvm/scripts/gvm"
