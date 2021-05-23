@@ -16,6 +16,7 @@ alias g='git'
 alias gap='git add -p'
 alias gan='git add -AN .'
 alias gpr='git pull --rebase'
+alias grv='git remote -v'
 alias goland='/usr/local/bin/goland'
 alias idea='/usr/local/bin/intellij'
 alias i='istioctl'
@@ -23,6 +24,7 @@ alias k="kubectl"
 alias ls='exa'
 alias myip='ipconfig getifaddr en0'
 alias omz="code ~/.oh-my-zsh"
+alias tf='terraform'
 alias vim='nvim'
 
 alias zshrc="code ~/.zshrc"
