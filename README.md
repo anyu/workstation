@@ -42,3 +42,10 @@ open -na "<path to binary>" --args "$@" .
 ```
 alias goland=/usr/local/bin/goland
 ```
+
+**Other Jetbrains config**
+- [spacegray-theme](https://plugins.jetbrains.com/plugin/12122-spacegray-theme)
+- Enabling key repeat (eg. for vim plugin)
+  - Intellij Ultimate Edition: `defaults write com.jetbrains.goland ApplePressAndHoldEnabled -bool false`
+  - Intellij Community Edition: `defaults write com.jetbrains.intellij.ce ApplePressAndHoldEnabled -bool false`
+  - Goland: `defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false`
