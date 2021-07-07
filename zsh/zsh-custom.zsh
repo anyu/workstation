@@ -8,6 +8,7 @@
 alias bi='brew install'
 alias bic='brew install cask'
 alias cat='bat'
+alias da='direnv allow'
 alias d='docker'
 alias dup='docker-compose up'
 alias ddown='docker-compose down'
