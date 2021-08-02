@@ -1,20 +1,21 @@
 # Quality of dev life
-brew 'bash' # Latest bash version
-brew 'bat'
-brew 'cloc'
+brew 'bash' # latest bash version
+brew 'bat' # better cat
+brew 'broot' # better tree
+brew 'cloc' # code counter
 brew 'diff-so-fancy'
 brew 'direnv'
-brew 'exa'
+brew 'exa' # better ls
 brew 'fasd'
 brew 'fd'
 brew 'fx' # nicer JSON output
-brew 'fzf' # Fuzzy finder
+brew 'fzf' # fuzzy finder
 brew 'gh'
 brew 'git'
 brew 'gpg'
 brew 'imagemagick'
 brew 'jq'
-brew 'ripgrep'
+brew 'ripgrep' # better grep
 brew 'starship'
 brew 'the_silver_searcher'
 brew 'tldr'
@@ -66,7 +67,7 @@ cask 'iterm2'
 cask 'meetingbar'
 cask 'monodraw'
 cask 'ngrok'
-cask 'rectangle'
+cask 'rectangle' # window resizer
 cask 'slack'
 cask 'spotify'
 cask 'visual-studio-code'

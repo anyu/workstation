@@ -28,6 +28,7 @@ alias myip='ipconfig getifaddr en0'
 alias omz="code ~/.oh-my-zsh"
 alias se='source .envrc'
 alias tf='terraform'
+alias tree='broot'
 alias vim='nvim'
 
 alias zshrc="code ~/.zshrc"
