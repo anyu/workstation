@@ -15,6 +15,7 @@ brew 'git'
 brew 'gpg'
 brew 'imagemagick'
 brew 'jq'
+brew 'pre-commit'
 brew 'ripgrep' # better grep
 brew 'starship'
 brew 'the_silver_searcher'
