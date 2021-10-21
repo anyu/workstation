@@ -12,7 +12,8 @@ main() {
     configure_starship || true
     install_fzf_bindings || true
     configure_vscode || true
-    install_gvm 
+    install_gvm || true
+    rustup
 
     # Reload
     source ~/.zshrc
@@ -107,6 +108,12 @@ install_gvm() {
     bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 
     source "${HOME}/.gvm/scripts/gvm"
+}
+
+rustup() {
+    echo -e "Installing Rust compiler (rustc) and Rust package manager (cargo)...\n"
+
+    rustup-init
 }
 
 configure_vscode() {

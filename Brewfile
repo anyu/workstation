@@ -38,6 +38,7 @@ brew 'neovim'
 brew 'pre-commit'
 brew 'protobuf'
 brew 'ruby'
+brew 'rustup'
 brew 'shfmt'
 brew 'shellcheck'
 
