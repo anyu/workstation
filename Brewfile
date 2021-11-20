@@ -69,6 +69,7 @@ cask 'iterm2'
 cask 'meetingbar'
 cask 'monodraw'
 cask 'ngrok'
+cask 'proxyman'
 cask 'rectangle' # window resizer
 cask 'slack'
 cask 'spotify'
