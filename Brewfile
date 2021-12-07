@@ -12,6 +12,7 @@ brew 'fx' # nicer JSON output
 brew 'fzf' # fuzzy finder
 brew 'gh'
 brew 'git'
+brew 'git-delta' # better git diffs
 brew 'gpg'
 brew 'imagemagick'
 brew 'jq'
@@ -45,6 +46,9 @@ brew 'shellcheck'
 tap "hashicorp/tap"
 brew "hashicorp/tap/terraform"
 brew "hashicorp/tap/vault"
+
+tap "superfly/tap"
+brew "superfly/tap/flyctl"
 
 # Extra
 brew 'asciinema'
