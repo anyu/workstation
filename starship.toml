@@ -24,4 +24,4 @@ ssh_only = true
 disabled = true
 
 [character]
-error_symbol = true  # Indicate error status by changing the symbol
+error_symbol =  "[✗](bold red) "

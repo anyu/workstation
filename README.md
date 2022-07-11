@@ -6,13 +6,20 @@
 
 ## Manual steps
 
+#### Prerequisites
+
+- Install Homebrew
+- Install 1Pass
+
 #### iTerm2
 * Preferences > Profiles > Text > Font > size 13
+* Preferences > Profiles > Colors > Color Presets > Import > import `.itermcolors` file
 
 #### macOS settings
 - Set up hot corners
 - Update keypress speeds
   - Keyboard > set `Key Repeat` to `Fast`; `Delay Until Repeat` to `Short`
+- Set Modifier Keys > USB Keyboard > Swap Option and Command keys
 
 #### Alfred
 - Replace Spotlight shortcut with Alfred

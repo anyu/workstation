@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 set -e
 
@@ -13,7 +13,7 @@ main() {
     install_fzf_bindings || true
     configure_vscode || true
     install_gvm || true
-    rustup
+    # rustup
 
     # Reload
     source ~/.zshrc
@@ -46,8 +46,8 @@ brewfile() {
 git_config() {
     echo -e "Configuring git...\n"
     git config --global url."git@github.com:".insteadOf https://github.com/
-    git config --global user.name "An Yu"
-    # git config --global user.email <email>
+    git config --global user.name "<name>"
+    git config --global user.email "<email>"
 
     git config --global alias.ci commit
     git config --global alias.ciam "commit --amend"
