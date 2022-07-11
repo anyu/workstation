@@ -32,6 +32,15 @@
   - [GitHub Workflow](https://github.com/gharlan/alfred-github-workflow)
   - [Encode/Decode](https://github.com/willfarrell/alfred-encode-decode-workflow)
 
+#### Chrome plugins
+
+- [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa)
+- [ColorPick Eyedropper](https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg)
+- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+- [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg)
+- [Wappalyzer](https://chrome.google.com/webstore/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg/) - show tech stack of site
+- [Ghostery](https://chrome.google.com/webstore/detail/ghostery-%E2%80%93-privacy-ad-blo/mlomiejdfkolichcflejclcbmpeaniij) - privacy ad blocker
+
 #### JetBrains
 
 Install command-line launcher for JetBrains IDE, eg. Goland.
@@ -44,14 +53,17 @@ Install command-line launcher for JetBrains IDE, eg. Goland.
 open -na "<path to binary>" --args "$@" .
 ```
 
-2. Alias `goland` to script path
+2. Alias `god` to script path
 
 ```
-alias goland=/usr/local/bin/goland
+alias god=/usr/local/bin/goland
 ```
 
 **Other Jetbrains config**
-- [spacegray-theme](https://plugins.jetbrains.com/plugin/12122-spacegray-theme)
+- Preferences > Plugins > Marketplace  
+  - `Spacegray Theme` ([spacegray-theme](https://plugins.jetbrains.com/plugin/12122-spacegray-theme))
+  - `IdeaVim`
+  - `Rainbow Brackets`
 - Enabling key repeat (eg. for vim plugin)
   - Intellij Ultimate Edition: `defaults write com.jetbrains.goland ApplePressAndHoldEnabled -bool false`
   - Intellij Community Edition: `defaults write com.jetbrains.intellij.ce ApplePressAndHoldEnabled -bool false`
