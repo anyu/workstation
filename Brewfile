@@ -36,6 +36,7 @@ brew 'istioctl'
 brew 'jetbrains-toolbox'
 # brew 'jenv' # Java env manager
 # brew 'neovim'
+brew 'nvm'
 brew 'pre-commit'
 brew 'protobuf'
 # brew 'ruby'
