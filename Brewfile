@@ -15,7 +15,6 @@ brew 'git'
 brew 'git-delta' # better git diffs
 brew 'gpg'
 # brew 'imagemagick'
-brew 'awscli'
 brew 'jq'
 brew 'pre-commit'
 brew 'ripgrep' # better grep
@@ -27,6 +26,7 @@ brew 'watch'
 brew 'wget'
 
 # Dev tool specific
+brew 'awscli'
 brew 'buf'
 brew 'docker'
 brew 'go'
@@ -36,13 +36,15 @@ brew 'istioctl'
 brew 'jetbrains-toolbox'
 # brew 'jenv' # Java env manager
 # brew 'neovim'
-brew 'nvm'
+brew 'nvm' # then install npm via nvm
 brew 'pre-commit'
 brew 'protobuf'
+brew 'pyenv' # python version manager
 # brew 'ruby'
 # brew 'rustup'
 brew 'shfmt'
 brew 'shellcheck'
+brew 'virtualenv' # python virtual env manager
 
 tap "hashicorp/tap"
 brew "hashicorp/tap/terraform"
@@ -52,8 +54,10 @@ brew "hashicorp/tap/terraform"
 cask '1password'
 cask 'alfred'
 cask 'charles'
+cask 'discord'
 cask 'docker'
 cask 'evernote'
+cask 'graphql-playground'
 # cask 'sublime-text'
 cask 'figma'
 cask 'firefox'
@@ -63,6 +67,7 @@ cask 'google-chrome'
 cask 'google-cloud-sdk'
 cask 'graphql-playground'
 cask 'iterm2'
+cask 'jetbrains-toolbox'
 cask 'monodraw'
 cask 'ngrok'
 cask 'proxyman'
