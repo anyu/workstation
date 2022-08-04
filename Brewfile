@@ -34,6 +34,8 @@ brew 'golangci-lint'
 brew 'grpcurl'
 brew 'istioctl'
 brew 'jetbrains-toolbox'
+brew 'kubectl'
+brew 'kubectx' # k8s context switcher; also installs kubens
 # brew 'jenv' # Java env manager
 # brew 'neovim'
 brew 'nvm' # then install npm via nvm
@@ -70,6 +72,7 @@ cask 'iterm2'
 cask 'jetbrains-toolbox'
 cask 'monodraw'
 cask 'ngrok'
+cask 'postman'
 cask 'proxyman'
 cask 'rectangle' # window resizer
 cask 'slack'
