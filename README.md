@@ -68,3 +68,6 @@ alias god=/usr/local/bin/goland
   - Intellij Ultimate Edition: `defaults write com.jetbrains.goland ApplePressAndHoldEnabled -bool false`
   - Intellij Community Edition: `defaults write com.jetbrains.intellij.ce ApplePressAndHoldEnabled -bool false`
   - Goland: `defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false`
+- Resolve keymap conflict between IdeaVim and Intellij:
+  - Preferences > search `vim`:
+    - `^G`: `Add Selection for Next Occurrence` > set Handler to `IDE`
