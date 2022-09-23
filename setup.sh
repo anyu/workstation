@@ -47,7 +47,7 @@ git_config() {
     echo -e "Configuring git...\n"
     git config --global url."git@github.com:".insteadOf https://github.com/
     git config --global user.name "<name>"
-    git config --global user.email "<email>"
+    git config --global user.email "1009227+anyu@users.noreply.github.com"
 
     git config --global alias.ci commit
     git config --global alias.ciam "commit --amend"
