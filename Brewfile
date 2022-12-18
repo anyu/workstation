@@ -55,6 +55,7 @@ brew "hashicorp/tap/terraform"
 # GUI apps
 cask '1password'
 cask 'alfred'
+cask 'altair-graphql-client' # GQL client that enables saving / env vars
 cask 'charles'
 cask 'discord'
 cask 'docker'
