@@ -37,6 +37,7 @@ brew 'jetbrains-toolbox'
 brew 'kubectl'
 brew 'kubectx' # k8s context switcher; also installs kubens
 # brew 'jenv' # Java env manager
+brew 'meetingbar' # handy macbar meeting manager
 # brew 'neovim'
 brew 'nvm' # then install npm via nvm
 brew 'pre-commit'
