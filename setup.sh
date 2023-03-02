@@ -52,6 +52,7 @@ git_config() {
     git config --global alias.ci commit
     git config --global alias.ciam "commit --amend"
     git config --global alias.co checkout
+    git config --global alias.rs "restore --staged"
     git config --global alias.pom "push origin main"
     git config --global alias.st status
     git config --global alias.dc "diff --cached"
