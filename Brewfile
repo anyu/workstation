@@ -40,10 +40,12 @@ brew 'kubectx' # k8s context switcher; also installs kubens
 brew 'meetingbar' # handy macbar meeting manager
 # brew 'neovim'
 brew 'nvm' # then install npm via nvm
+# brew 'postgresql'
 brew 'pre-commit'
 brew 'protobuf'
 brew 'pyenv' # python version manager
 # brew 'ruby'
+# brew 'rvm' # ruby version manager
 # brew 'rustup'
 brew 'shfmt'
 brew 'shellcheck'
@@ -58,6 +60,7 @@ cask '1password'
 cask 'alfred'
 cask 'altair-graphql-client' # GQL client that enables saving / env vars
 cask 'charles'
+cask 'dbeaver-community' # postgres GUI
 cask 'discord'
 cask 'docker'
 cask 'evernote'
