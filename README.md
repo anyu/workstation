@@ -71,3 +71,7 @@ alias god=/usr/local/bin/goland
 - Resolve keymap conflict between IdeaVim and Intellij:
   - Preferences > search `vim`:
     - `^G`: `Add Selection for Next Occurrence` > set Handler to `IDE`
+
+#### VS Code
+
+- Enabling key repeat (eg. for vim plugin). Restart VSCode after: `defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false`
