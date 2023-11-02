@@ -3,10 +3,11 @@ brew 'bash' # latest bash version
 brew 'bat' # better cat
 brew 'broot' # better tree
 brew 'cloc' # code counter
+brew 'croc' # easily send files between computers
 brew 'diff-so-fancy' # better differ
 brew 'direnv' # env var mgmt
 brew 'exa' # better ls
-brew 'fasd' # quick file navigation
+# brew 'fasd' # quick file navigation - deprecated
 brew 'fd' # better 'find'
 brew 'fx' # nicer JSON output
 brew 'fzf' # fuzzy finder
@@ -40,6 +41,7 @@ brew 'kubectx' # k8s context switcher; also installs kubens
 brew 'meetingbar' # handy macbar meeting manager
 # brew 'neovim'
 brew 'nvm' # then install npm via nvm
+brew 'orbstack' # linux vms
 # brew 'postgresql'
 brew 'pre-commit'
 brew 'protobuf'
@@ -50,6 +52,10 @@ brew 'pyenv' # python version manager
 brew 'shfmt'
 brew 'shellcheck'
 brew 'virtualenv' # python virtual env manager
+brew 'wireshark'
+
+# Other
+brew 'ffmpeg' # audio/video format converter
 
 tap "hashicorp/tap"
 brew "hashicorp/tap/terraform"
@@ -78,10 +84,13 @@ cask 'monodraw'
 cask 'ngrok'
 cask 'postman'
 cask 'proxyman'
+# cask 'raspberry-pi-image' # imager for rpi
 cask 'rectangle' # window resizer
 cask 'slack'
 cask 'spotify'
 cask 'visual-studio-code'
+cask 'wireshark-chmodbpf' # perms for wireshark
+cask 'zulip'
 
 # Mac App Store apps
 # brew 'mas' # Mac App Store manager
