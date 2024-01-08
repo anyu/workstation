@@ -15,6 +15,7 @@ alias i='istioctl'
 alias k="kubectl"
 alias ls='exa'
 alias myip='ipconfig getifaddr en0'
+alias python="python3"
 alias vim='nvim'
 
 alias bp="code ~/.bash_rprofile"

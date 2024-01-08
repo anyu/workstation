@@ -1,4 +1,5 @@
 # Quality of dev life
+brew 'bore-cli'
 brew 'bash' # latest bash version
 brew 'bat' # better cat
 brew 'broot' # better tree
