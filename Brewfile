@@ -7,8 +7,7 @@ brew 'cloc' # code counter
 brew 'croc' # easily send files between computers
 brew 'diff-so-fancy' # better differ
 brew 'direnv' # env var mgmt
-brew 'exa' # better ls
-# brew 'fasd' # quick file navigation - deprecated
+brew 'eza' # better ls
 brew 'fd' # better 'find'
 brew 'fx' # nicer JSON output
 brew 'fzf' # fuzzy finder
@@ -33,19 +32,19 @@ brew 'buf'
 brew 'docker'
 brew 'go'
 brew 'golangci-lint'
-brew 'grpcurl'
-brew 'istioctl'
-brew 'jetbrains-toolbox'
+# brew 'grpcurl'
+# brew 'istioctl'
+# brew 'jetbrains-toolbox'
 brew 'kubectl'
 brew 'kubectx' # k8s context switcher; also installs kubens
 # brew 'jenv' # Java env manager
 brew 'meetingbar' # handy macbar meeting manager
 # brew 'neovim'
 brew 'nvm' # then install npm via nvm
-brew 'orbstack' # linux vms
+# brew 'orbstack' # linux vms
 # brew 'postgresql'
 brew 'pre-commit'
-brew 'protobuf'
+# brew 'protobuf'
 brew 'pyenv' # python version manager
 # brew 'ruby'
 # brew 'rvm' # ruby version manager
@@ -53,7 +52,7 @@ brew 'pyenv' # python version manager
 brew 'shfmt'
 brew 'shellcheck'
 brew 'virtualenv' # python virtual env manager
-brew 'wireshark'
+# brew 'wireshark'
 
 # Other
 brew 'ffmpeg' # audio/video format converter

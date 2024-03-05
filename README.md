@@ -26,6 +26,9 @@
   - 1. Keyboard shortcuts > Spotlight > uncheck Show spotlight search
   - 1. Alfred > Preferences > change Alfred hotkey to cmd+space
 
+- Allow Alfred access
+  - Alfred > Preferences > Features > Default Results: Check Folders, Documents
+
 - Activate PowerPack
 
 - Import Alfred Workflows - download & double-click
@@ -33,13 +36,16 @@
   - [Encode/Decode](https://github.com/willfarrell/alfred-encode-decode-workflow)
 
 #### Chrome plugins
-
+- [AdBlock](https://chromewebstore.google.com/detail/adblock-%E2%80%94-best-ad-blocker/gighmmpiobklfepjocnamgkkbiglidom)
 - [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa)
 - [ColorPick Eyedropper](https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg)
 - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 - [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg)
-- [Wappalyzer](https://chrome.google.com/webstore/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg/) - show tech stack of site
 - [Ghostery](https://chrome.google.com/webstore/detail/ghostery-%E2%80%93-privacy-ad-blo/mlomiejdfkolichcflejclcbmpeaniij) - privacy ad blocker
+
+#### VS Code
+
+- Enabling key repeat (eg. for vim plugin). Restart VSCode after: `defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false`
 
 #### JetBrains
 
@@ -72,6 +78,3 @@ alias god=/usr/local/bin/goland
   - Preferences > search `vim`:
     - `^G`: `Add Selection for Next Occurrence` > set Handler to `IDE`
 
-#### VS Code
-
-- Enabling key repeat (eg. for vim plugin). Restart VSCode after: `defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false`
