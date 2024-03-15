@@ -20,6 +20,7 @@ brew 'jq'
 brew 'pre-commit'
 brew 'ripgrep' # better grep
 brew 'starship'
+brew 'tfenv'
 brew 'the_silver_searcher'
 brew 'tldr'
 brew 'tree'

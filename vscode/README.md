@@ -8,3 +8,4 @@ $HOME/Library/Application\ Support/Code/User/settings.json
 - [vs-code icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
 - [Base16 Ocean Dark](https://marketplace.visualstudio.com/items?itemName=mradbourne.theme-base16-ocean-deep)
 - [Go](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
+- [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)

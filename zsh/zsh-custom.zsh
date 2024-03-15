@@ -25,7 +25,6 @@ alias myip='ipconfig getifaddr en0'
 alias o='open'
 alias omz="code ~/.oh-my-zsh"
 alias python="python3"
-alias tf='terraform'
 alias tree='broot'
 alias vim='nvim'
 
