@@ -45,7 +45,13 @@
 
 #### VS Code
 
-- Enabling key repeat (eg. for vim plugin). Restart VSCode after: `defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false`
+- Enabling key repeat (eg. for vim plugin). Restart VSCode after:
+  ```
+  defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+  defaults delete -g ApplePressAndHoldEnabled  # If necessary, reset global default
+  ```
+
+  Older command: `VSCodeInsiders` instead of `VSCode` 
 
 #### JetBrains
 
